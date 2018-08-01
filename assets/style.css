@@ -1,0 +1,27 @@
+body{background-color:darkgreen}
+div{
+    border-style: solid;
+    border-width:20px;
+    border-bottom-width: 30px;
+
+}
+tr{border-style: solid;
+    border-width:5px;}
+
+h2{border-style: solid;
+    border-width:10px;
+    border-color:dimgray;
+}
+#tracks{
+    border-width:15px;
+}
+#choo{position:fixed;
+    left:920px;
+    border-style:solid;
+    border-width:20px;
+    bottom:540px;
+}
+#window{
+    border-style:solid;
+    border-width:15px;
+}
