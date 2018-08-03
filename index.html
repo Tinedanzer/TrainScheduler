@@ -29,6 +29,7 @@
             <th scope="col" style="font-weight: bold">Minutes Away</th>
           </tr>
         </thead>
+        <!-- append the tbody when importing train data(make new trs and tds) -->
         <tbody>
           <tr> 
             <td id=train>Bob</td>
@@ -36,15 +37,31 @@
             <td id=frequency>Goes</td>
             <td id=arrival>Choo</td>
             <td id=minutes>Choo</td>
-          </tr>  
+          </tr>
+          <tr>  
             <td colspan="2">Larry the Bird</td>
             <td>@twitter</td>
           </tr>
         </tbody>
       </table>
+<div id=everyshing>
+  <form><h3>Add Train</h3>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1"><strong>Train Name</strong></label>
+    <textarea class="form-control" id="train1" rows="1"></textarea>
+  
+    <label for="exampleFormControlTextarea1"><strong>Destination</strong>></label>
+    <textarea class="form-control" id="destination1" rows="1"></textarea>
+  
+    <label for="exampleFormControlTextarea1" style="font-weight:bold">First Train Time (HH:mm -military time)</label>
+    <textarea class="form-control" id="time1" rows="1"></textarea>
+  
+    <label for="exampleFormControlTextarea1" style="font-weight:bold">Frequency (min)</label>
+    <textarea class="form-control" id="frequency1" rows="1"></textarea>
+  </div>
+  </form>
 </div>
-<form>
-    
-</form>
+<button type="button" class="btn btn-primary">Submit</button>
+</div>
 </body>
 </html>
