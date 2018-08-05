@@ -23,6 +23,16 @@ h2{border-style: solid;
     bottom:540px;
 }
 #window{
+    position:relative;
+    left:40%;
+    width:50%;
+    border-style:solid;
+    border-width:15px;
+}
+#window2{
+    position:relative;
+    left:50%;
+    width:50%;
     border-style:solid;
     border-width:15px;
 }

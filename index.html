@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="assets/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="code.js"></script>
 </head>
@@ -14,10 +15,10 @@
     <div class="row">
         <h1>
         <div class="col-mid-12">
-        The Train Goes .......<span id=window></span><span id=choo> CHOO CHOO!</h1></span>
+        The Train Goes .......<span id=window>&nbsp&nbsp&nbsp</span><span id=window2>&nbsp&nbsp&nbsp</span><span id=choo> CHOO CHOO!</h1></span>
         </div>
     </div>
-    <div id=tracks>○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○</div>
+    <div class "row" id=tracks>○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○</div>
       <table class="table table-hover" style="background-color:darkgoldenrod">
         <thead>
                 <tr><h2 style="background-color: aqua">Current Train Schedule</h2></tr>
@@ -44,24 +45,25 @@
           </tr>
         </tbody>
       </table>
-<div id=everyshing>
+<div class="row"><div class="col-lg-12">
+  <div id=everyshing class="panel-body">
   <form><h3>Add Train</h3>
   <div class="form-group">
-    <label for="exampleFormControlTextarea1"><strong>Train Name</strong></label>
+    <label for="text"><strong>Train Name</strong></label>
     <textarea class="form-control" id="train1" rows="1"></textarea>
   
-    <label for="exampleFormControlTextarea1"><strong>Destination</strong>></label>
+    <label for="text"><strong>Destination</strong></label>
     <textarea class="form-control" id="destination1" rows="1"></textarea>
+
+    <label for="text" style="font-weight:bold">First Train Time (HH:mm -military time)</label>
+    <input class="form-control" id="time1" rows="1" type="number">
   
-    <label for="exampleFormControlTextarea1" style="font-weight:bold">First Train Time (HH:mm -military time)</label>
-    <textarea class="form-control" id="time1" rows="1"></textarea>
-  
-    <label for="exampleFormControlTextarea1" style="font-weight:bold">Frequency (min)</label>
-    <textarea class="form-control" id="frequency1" rows="1"></textarea>
-  </div>
+    <label for="text" style="font-weight:bold">Frequency (min)</label>
+    <input class="form-control" id="frequency1" rows="1" type="number">
+    <button type="submit" class="btn btn-primary" id="addTrain" value="submit">Submit</button>   
   </form>
-</div>
-<button type="button" class="btn btn-primary">Submit</button>
+  </div>
+</div></div>
 </div>
 </body>
 </html>
