@@ -6,8 +6,9 @@
     <link rel="stylesheet" type="text/css" href="assets/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/style.css">
-    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <script type="text/javascript" src="code.js"></script>
 </head>
 <body>
@@ -45,9 +46,9 @@
           </tr>
         </tbody>
       </table>
-<div class="row"><div class="col-lg-12">
+
   <div id=everyshing class="panel-body">
-  <form><h3>Add Train</h3>
+  <form role="form"><h3>Add Train</h3>
   <div class="form-group">
     <label for="text"><strong>Train Name</strong></label>
     <textarea class="form-control" id="train1" rows="1"></textarea>
@@ -56,14 +57,16 @@
     <textarea class="form-control" id="destination1" rows="1"></textarea>
 
     <label for="text" style="font-weight:bold">First Train Time (HH:mm -military time)</label>
-    <input class="form-control" id="time1" rows="1" type="number">
+    <input class="form-control" id="time1" type="text">
   
     <label for="text" style="font-weight:bold">Frequency (min)</label>
-    <input class="form-control" id="frequency1" rows="1" type="number">
-    <button type="submit" class="btn btn-primary" id="addTrain" value="submit">Submit</button>   
+    <input class="form-control" id="frequency1" type="number">
+  </div>
+    <button type="submit" class="btn btn-primary" id="addTrain">Submit</button>
+  
   </form>
   </div>
-</div></div>
+  
 </div>
 </body>
 </html>
