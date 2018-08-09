@@ -9,12 +9,14 @@ var config = {
   messagingSenderId: "360578690037"
 };
 firebase.initializeApp(config);
-// establishing variables that will be fill from form data
-  var trains = "";
-  var destinations = "";
-  var minutes = 0;
-  var frequencys = 0;
-
+// establishing variables that will be filled from form data
+  let trains = "";
+  let destinations = "";
+  let minutes = 0;
+  let frequencys = 0;
+// When the submit button is clicked, variables are defined from the values submitted,
+// then the values are stored in the firebase server.
+// Aroo2.reset , clears the form without refreshing the page.
 $("#addTrain").on("click",function(){
   event.preventDefault();
 
@@ -31,18 +33,35 @@ $("#addTrain").on("click",function(){
     dateAdded:firebase.database.ServerValue.TIMESTAMP
   });
   $("#Aroo2")[0].reset();
-  
+  // return false;
   console.log(trains);console.log(destinations);
 });
+// created a button to hide all Trains
+let deleteButton= $('<button/>');
+// $('#everything2').append(deleteButton);
+deleteButton.text('Hide All Trains')
+$('#everything2').on("click",function(){
+  $("#everything").empty();
+});
 
+// when a new train is added, this appends the data into a new row
 firebase.database().ref().on("child_added", function(snap){
-  
+  let away2=snap.val().minutes;
   $('#train').append("<tr><td>" + snap.val().trains + "</td></tr>");
   $('#destination').append("<tr><td>"+snap.val().destinations+"</td></tr>");
   $('#frequency').append("<tr><td>"+snap.val().frequencys+"</td></tr>");
-  $('#minutes').append("<tr><td>"+snap.val().minutes+"</td></tr>");
+  $('#arrival').append("<tr><td>"+away2+"</td></tr>");
+  // $('#away').append("<tr><td>"+away2+"</td></tr>")
+  $('#everything2').append(deleteButton);
 })
 
+firebase.database().ref().on("value",function(snap){  
+  console.log(snap.val());
+    $('#train').html(snap.val().trains);
+    $('#destination').html(snap.val().destinations);
+    $('#frequency').html(snap.val().frequencys);
+    $('#minutes').html(snap.val().minutes);
+  });
 });
 // this code isnt needed, but will keep for future reference.
 
