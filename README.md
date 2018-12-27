@@ -6,3 +6,4 @@ This app was created in order to store Train schedules into a database, using fi
 The manager puts the train schedules into the form, clicks submit. Without refreshing the page, the data is 
 stored in the server for everyone to see.
 
+Moment.js is used to keep track of time, and to keep time schedules updated/current.
