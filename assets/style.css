@@ -43,3 +43,29 @@ button{
     position:relative;
     /* left:35%; */
 }
+#picture{
+    float:right;
+    position:relative;
+    /* height:15%; */
+    width:23.2%;
+    /* left:71%; */
+    left:1.5%
+}
+@media screen and (max-width:980px)
+{
+ 
+}
+@media screen and (max-width:1200px)
+{
+    #picture{
+        display:none
+    }
+}
+@media screen and (max-width:640px)
+{
+
+}
+@media screen and (max-width:474px)
+{
+ 
+}
