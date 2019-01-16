@@ -1,13 +1,8 @@
 $(document).ready(function () {
   // Makes a connection to firebase.
-  var config = {
-    apiKey: "AIzaSyDU-Ve4ffAdpzGw3tLOvIVLGNRimKKwuPU",
-    authDomain: "aroo-8ee3a.firebaseapp.com",
-    databaseURL: "https://aroo-8ee3a.firebaseio.com",
-    projectId: "aroo-8ee3a",
-    storageBucket: "aroo-8ee3a.appspot.com",
-    messagingSenderId: "360578690037"
-  };
+  const keys= require("./keys");
+  const firebase= new Firebase(keys.firebase);
+  
   firebase.initializeApp(config);
   // establishing variables that will be filled from form data
   // must use Let or Var here and not const because the data changes.
