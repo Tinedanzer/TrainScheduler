@@ -1,6 +1,7 @@
 $(document).ready(function () {
   // Makes a connection to firebase.
   // normally I wouldn't put the apikey in public hands, but this purpose and this app; It is safe for me.
+  // allows me to not have this linked to heroku
   var config = {
     apiKey: "AIzaSyDU-Ve4ffAdpzGw3tLOvIVLGNRimKKwuPU",
     authDomain: "aroo-8ee3a.firebaseapp.com",
