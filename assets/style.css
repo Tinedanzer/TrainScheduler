@@ -3,7 +3,7 @@ body{background-color:darkgreen
 div{
     border-style: solid;
     border-width:20px;
-    border-bottom-width: 30px;
+    border-bottom-width: 5px;
 
 }
 tr{border-style: solid;
@@ -17,10 +17,10 @@ h2{border-style: solid;
     border-width:15px;
 }
 #choo{position:fixed;
-    left:70%;
+    left:68.5%;
     border-style:solid;
-    border-width:20px;
-    bottom:540px;
+    border-width:15px;
+    bottom:85%;
 }
 #window{
     position:relative;
@@ -36,7 +36,7 @@ h2{border-style: solid;
     border-style:solid;
     border-width:15px;
 }
-#everyshing{
+#everything{
     border-bottom-width:0px;
 }
 button{

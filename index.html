@@ -12,30 +12,35 @@
     <script type="text/javascript" src="code.js"></script>
 </head>
 <body>
-<div class="container">
+<div class="container" id="main-container">
     <div class="row">
         <h1>
         <div class="col-mid-12">
-        The Train Goes .......<span id=window>&nbsp&nbsp&nbsp</span><span id=window2>&nbsp&nbsp&nbsp</span><span id=choo> CHOO CHOO!</h1></span>
+        The Train Goes .......<span id=window>&nbsp&nbsp&nbsp</span><span id=window2>&nbsp&nbsp&nbsp</span><span id=choo>CHOO CHOO!</span></h1>
         </div>
     </div>
-    <!-- <div class="container"> -->
-        <div class= "row" id=tracks>○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○
+    <div class="container">
+        <div class= "row" id=tracks>○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘○○◘
         </div>
-    <!-- </div> -->
+    </div>
     <div class="container">
       <table class="table table-hover" style="background-color:darkgoldenrod">
         <thead>
+        <div class= "row">
                 <tr><h2 style="background-color: aqua">Current Train Schedule</h2></tr>
+        </div>
           <tr>
+        <div class= "row">
             <th scope="col"><strong>Train Name</strong></th>
             <th scope="col"><strong>Destination</strong></th>
             <th scope="col" style="font-weight: bold">Frequency(min)</th>
             <th scope="col" style="font-weight: bold">Next Arrival</th>
             <th scope="col" style="font-weight: bold">Minutes Away</th>
+        </div>
           </tr>
         </thead> 
         <tbody>
+          <div class= "row">
           <tr id=everything> 
             <td id=train></td>
             <td id=destination></td>
@@ -44,16 +49,17 @@
             <td id=away></td>
             <td id=everything2></td>
           </tr>
-         
+         </div>
         </tbody>
       </table>
     </div>
 </div>
 <!-- Starting of the button -->
 <div class="container">
-  <div id=everyshing class="panel-body">
+    <div class="row">
+  <div id=everything class="panel-body">
   <form role="form" id="Aroo2">
-  <div class="row">
+  
     <h3>Add Train</h3>
   </div>
   <div class="form-group">
